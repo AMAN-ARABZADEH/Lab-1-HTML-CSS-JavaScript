@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="input-section">
+      <h1 id="header">Beställ ditt visitkort här:</h1>
+      <div id="container">
+        <form id="form">
+          <label>Företag .......</label>
+          <input type="text" id="company" placeholder="Company name: " />
+          <br />
+          <label>Efternamn .....</label>
+          <input type="text" id="lastname" placeholder="Last-name: " />
+          <br />
+          <label>Förnamn .......</label>
+          <input type="text" id="firstname" placeholder="First-name: " />
+          <br />
+          <label>Title .........</label>
+          <input type="text" id="title" placeholder="Title: " />
+          <br />
+          <label>Telefon .......</label>
+          <input type="text" id="phone" placeholder="Phone:" />
+          <br />
+          <label>E-post ........</label>
+          <input type="text" id="email" placeholder="E-post: " />
+          <br />
+          <label>Bakgrundsfärg.</label>
+          <select id="select-background">
+            <option value="lightblue">Ljusblå</option>
+            <option value="lightyellow">Ljusgul</option>
+            <option value="white">Vit</option>
+            <option value="turquoise">Turkos</option>
+          </select>
+          <br />
+          <label>Textfärg.....</label>
+          <select id="select-text-color">
+            <option value="black">Svart</option>
+            <option value="blue">Blå</option>
+            <option value="red">Röd</option>
+            <option value="darkgreen">Mörkgrön</option>
+          </select>
+          <br />
+          <label>Typsnitt</label>
+          <select id="select-text-font">
+            <option value="Verdana">Verdana</option>
+            <option value="arial">Arial</option>
+            <option value="tahoma">Tahoma</option>
+            <option value="impact">Impact</option>
+          </select>
+          <br />
+          <button id="reset-button">Nollställ</button>
+          <button id="print-button">Skriv Ut</button>
+        </form>
+      </div>
+    </div>
+    <div id="output">
+      <div id="designed">
+        <h2 id="out-company-name"></h2>
+        <h4 id="out-first-name"></h4>
+        <p id="out-title"></p>
+        <br />
+        <p id="out-phone"></p>
+        <p id="out-email"></p>
+      </div>
+      <button class="btn">Tillbaka</button>
+    </div>
+
+    <!-- Javascript link-->
+    <script src="main.js"></script>
+  </body>
+</html>
